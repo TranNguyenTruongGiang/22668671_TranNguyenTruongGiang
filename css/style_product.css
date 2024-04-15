@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*  */
+#product-list {
+    margin-top: 103px;
+}
+
+.product{
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+@media(min-width: 992px){
+    .nav-item {
+        border-bottom: none;
+    }
+
+    .info {
+        display: block;
+    }
+}

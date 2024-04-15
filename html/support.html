@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỗ trợ khách hàng</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style_support.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="../js/all.min.js"></script>
+    <link rel="stylesheet" href="../css/nav.css">
+    <script src="../js/nav.js"></script>
+    <link rel="icon" href="../icon/samsung_icon.png" type="image/png">
+</head>
+<body>
+    <div class="container-fluid p-0 m-0">
+      <div class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+          <div class="col-md-3 col-sm-6">
+            <a href="../html/home.html" class="navbar-brand d-flex justify-content-between align-items-center">
+              <span class="text-uppercase fw-lighter ms-2">SAM SUNG</span>
+            </a>
+          </div>
+          <div class="info order-lg-2 nav-btns">
+            <button type="button" class="btn position-relative">
+              <a href="../html/login.html">
+                <img src="../icon/user_icon.svg" alt="" width="50%">
+              </a>
+            </button>
+            <button id="btnCart" type="button" class="btn position-relative">
+              <a href="../html/cart.html">
+                <img src="../icon/shopping_cart.svg" alt="" width="50%">
+              </a>
+              <span id="productCountBadge" class="position-absolute top-0 start-100 translate-middle badge bg-primary">
+                0
+              </span>
+            </button>
+            <button type="button" class="btn position-relative">
+              <img id="searchButton" src="../icon/material-symbols--search.svg" alt="" width="50%">
+            </button>
+          </div>
+
+          <button class="navbar-toggler border-0" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse border-lg-1" id="navMenu">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item px-2 py-2">
+                <a href="../html/home.html" class="nav-link text-uppercase text-dark">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="../html/product.html" class="nav-link text-uppercase text-dark">
+                  Product
+                </a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="../html/news.html" class="nav-link text-uppercase text-dark">
+                  News
+                </a>
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <a href="../html/about.html" class="nav-link text-uppercase text-dark">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <a href="../html/contact.html" class="nav-link text-uppercase text-dark">
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <a href="../html/support.html" class="nav-link text-uppercase text-dark">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+      <section class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 position-relative">
+                        <img class="w-100 h-100" src="../img/backsupport.avif" alt="">
+                        <p class="t1 position-absolute">We are always happy to assist</p>
+                        <h2 class="t2 position-absolute">Welcome to Online Store Support</h2>
+                        <input class="search position-absolute" type="search" placeholder="What do you want to ask?">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <h3 class="text-center">List of frequently asked questions</h3>
+                </div>
+                <div class="row">
+                    <div class="card col-md-6 col-lg-4 bg-transparent my-3 border-lg-1">
+                        <div class="card-body px-0">
+                          <h4 class="card-title">Samsung account</h4>
+                          <p class="card-text">Enjoy access to Samsung services and applications</p>
+                          <a href="#"><small class="text-dark">Find out more</small></a>
+                        </div>
+                    </div>
+                    <div class="card col-md-6 col-lg-4 bg-transparent my-3 border-lg-1">
+                        <div class="card-body px-0">
+                          <h4 class="card-title">Products and Orders</h4>
+                          <p class="card-text">How can we help you with your order?</p>
+                          <a href="../html/product.html"><small class="text-dark">Find out more</small></a>
+                        </div>
+                    </div>
+                    <div class="card col-md-6 col-lg-4 bg-transparent my-3 border-lg-1">
+                        <div class="card-body px-0">
+                          <h4 class="card-title">Payment and Financial Solutions</h4>
+                          <p class="card-text">Choose a payment method that suits your financial capabilities</p>
+                          <a href="../html/cart.html"><small class="text-dark">Find out more</small></a>
+                        </div>
+                    </div>
+
+                    <div class="card col-md-6 col-lg-4 bg-transparent my-3 border-lg-1">
+                        <div class="card-body px-0">
+                          <h4 class="card-title">Delivery and Installation</h4>
+                          <p class="card-text">Check the delivery status of orders, track individual shipments, and more.</p>
+                          <a href="#"><small class="text-dark">Find out more</small></a>
+                        </div>
+                    </div>
+                    <div class="card col-md-6 col-lg-4 bg-transparent my-3 border-lg-1">
+                        <div class="card-body px-0">
+                          <h4 class="card-title">Returns and Cancellations</h4>
+                          <p class="card-text">How to return item(s), cancel orders and other common questions.</p>
+                          <a href="#"><small class="text-dark">Find out more</small></a>
+                        </div>
+                    </div>
+                    <div class="card col-md-6 col-lg-4 bg-transparent my-3 border-lg-1">
+                        <div class="card-body px-0">
+                          <h4 class="card-title">Service and Warranty</h4>
+                          <p class="card-text">Find out everything you need to know about service and warranty</p>
+                          <a href="../html/term.html"><small class="text-dark">Find out more</small></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-2">
+                        <button>Find out more</button>
+                    </div>
+                    <div class="col-md-5"></div>
+                </div>
+                <div class="r5 row mt-3">
+                    <div class="col-md-6 p-5">
+                        <h3>
+                            Useful Guide for<br>
+                            Online Shopping
+                        </h3>
+                        <a class="text-dark" href="#">Chương trình nâng cấp Samsung</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-80 h-80" src="../img/backsupporttuto.avif" alt="">
+                    </div>
+                </div>
+                <div class="r6 row mt-3">
+                    <div class="col1 col-md-12 position-relative p-0">
+                        <h3 class="position-absolute text-white">
+                            Helpful online<br>
+                            store support
+                        </h3>
+                        <a class="text-white position-absolute" href="#">Need help choosing a new device?</a>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <h2 class="text-center">Contact Info</h2>
+                </div>
+                <div class="row mt-3 mb-5">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-2">
+                        <button class="w-100 bg-dark text-white">Contact</button>
+                    </div>
+                    <div class="col-md-5"></div>
+                </div>
+            </div>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                  <div id="usernameError" class="form-text text-danger"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                  <div id="passwordError" class="form-text text-danger"></div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
+                <button id="btnLogin" type="submit" class="btn btn-primary w-100">Log In</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <p class="text-center mb-0">Don't have an account? <a href="../html/signup.html" class="fw-bold">Sign Up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-dark py-5">
+            <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                <a href="#" class="text-uppercase text-decoration-none brand text-white">Attire</a>
+                <p class="text-white text-muted mt-3">
+                    Trở thành công ty điện tử lớn nhất thế giới thông qua cam kết sáng tạo, tự chủ và đổi mới mở
+                </p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light">Links</h5>
+                <ul class="">
+                    <li class="">
+                    <a href="../html/home.html" class="text-white text-decoration-none text-muted">
+                        Home
+                    </a>
+                    </li>
+                    <li class="">
+                    <a href="../html/product.html" class="text-white text-decoration-none text-muted">
+                        Product
+                    </a>
+                    </li>
+                    <li class="">
+                    <a href="../html/news.html" class="text-white text-decoration-none text-muted">
+                        news
+                    </a>
+                    </li>
+                    <li class="">
+                    <a href="../html/about.html" class="text-white text-decoration-none text-muted">
+                        About Us
+                    </a>
+                    </li>
+                </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Contact Us</h5>
+                <div class="d-flex justify-content-start 
+                align-items-start my-2 text-muted">
+                    <span class="fw-light">
+                    <a class="text-decoration-none text-secondary" href="../html/contact.html">Show more ></a>
+                    
+                    </span>
+                </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Follow Us</h5>
+                <ul class="list-unstyled d-flex">
+                    <li>
+                    <a href="#" class="text-white
+                    text-decoration-none text-muted fs-4 me-4">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#" class="text-white
+                    text-decoration-none text-muted fs-4 me-4">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#" class="text-white
+                    text-decoration-none text-muted fs-4 me-4">
+                    <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+      </footer>
+    </div>
+</body>
+</html>

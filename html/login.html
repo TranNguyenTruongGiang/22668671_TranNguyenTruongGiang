@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style_login.css">
+    <script src="../js/login.js"></script>
+    <link rel="icon" href="../icon/samsung_icon.png" type="image/png">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row vh-100 g-0">
+            <!-- Left slide -->
+            <div class="col-lg-6 position-relative d-none d-lg-block">
+                <div class="bg-holder" style="background-image: 
+                url('../img/company.jpg');"></div>
+            </div>
+
+            <!-- Right slide -->
+            <div class="col-lg-6">
+                <div class="row align-items-center justify-content-center h-100 g-0 px-4 px-sm-0">
+                    <div class="col col-sm-6 sol-lg-7 col-xl-6">
+                        <!-- Logo -->
+                        <a href="#" class="d-flex justify-content-center mb-4">
+                            <img src="../img/logo.jpg" alt="" width="60%">
+                        </a>
+            
+                        <!-- Logo -->
+                        <div class="text-center mb-5">
+                            <h3 class="fw-bold">Log In</h3>
+                            <p class="text-secondary">Get access to your account</p>
+                        </div>
+            
+                        <!-- Social Login -->
+                        <button id="googleLoginBtn" class="btn btn-lg btn-outline-secondary btn-lg btn-outline-custom w-100 mb-3">
+                            <img src="../icon/bxl-google.svg" alt="">
+                            Login with Google
+                        </button>
+                        <button id="facebookLoginBtn" class="btn btn-lg btn-outline-secondary btn-lg btn-outline-custom btn-lg w-100 mb-3">
+                            <img src="../icon/bxl-facebook-circle.svg" alt="">
+                            Login with Facebook
+                        </button>
+            
+                        <!-- Divider -->
+                        <div class="position-relative">
+                            <hr class="text-secondary divider">
+                            <div class="divider-content-center">or</div>
+                        </div>
+            
+                        <!-- Form -->
+                        <form action="#">
+                            <div class="input-group mb-1">
+                                <span class="input-group-text">
+                                    <img src="../icon/bxs-user.svg" alt="">
+                                </span>
+                                <input id="username" type="text" class="form-control form-control-lg gs-6" placeholder="Username">
+                                <!-- Thêm label dưới input -->
+                            </div>
+                            <label class="text-danger" id="usernameError">*</label>
+                            <div class="input-group mb-1">
+                                <span class="input-group-text">
+                                    <img src="../icon/bxs-lock-alt.svg" alt="">
+                                </span>
+                                <input id="pass" type="text" class="form-control form-control-lg gs-6" placeholder="Password">
+                                <!-- Thêm label dưới input -->
+                            </div>
+                            <label class="text-danger" id="passwordError">*</label>
+                            <div class="input-group mb-3 d-flex justify-content-between">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="formCheck">
+                                    <label for="formCheck" class="form-check-label text-secondary"><small>Remember me</small></label>
+                                </div>
+                                <div>
+                                    <small><a href="#">Forgot Password?</a></small>
+                                </div>
+                            </div>
+                            <button id="btnLogin" class="btn btn-primary btn-lg w-100">Login</button>
+                        </form>
+            
+                        <div class="text-center">
+                            <small>Don't have an account? <a href="../html/signup.html" class="fw-bold">Sign Up</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal cho Google -->
+            <div class="modal fade" id="googleModal" tabindex="-1" aria-labelledby="googleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="googleModalLabel">Tiếp tục với Google</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Bạn có chắc chắn muốn tiếp tục đăng nhập bằng tài khoản Google của mình?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                            <button type="button" id="googleContinueBtn" class="btn btn-primary">Tiếp tục</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal cho Facebook -->
+            <div class="modal fade" id="facebookModal" tabindex="-1" aria-labelledby="facebookModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="facebookModalLabel">Tiếp tục với Facebook</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Bạn có chắc chắn muốn tiếp tục đăng nhập bằng tài khoản Facebook của mình?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                            <button type="button" id="facebookContinueBtn" class="btn btn-primary">Tiếp tục</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

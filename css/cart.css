@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.rt {
+    min-height: 1500px!important;
+    margin: 0;
+}
+
+.productList {
+    margin-top: 103px;
+}
+
+#custom-table {
+    max-height: 10800px; /* Đặt giá trị max-height */
+}
+
+.table img {
+    width: 100%;
+    height: 100%;
+}
+
+#custom-table th:first-child {
+    width: 100px; /* Đặt chiều rộng 100px hoặc bất kỳ giá trị nào bạn muốn */
+}
+
+/* Căn giữa theo trục y */
+td, th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Căn giữa theo cả hai trục x và y */
+.centered-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kích thước lớn hơn cho thẻ i */
+.centered-icon i {
+    font-size: 24px; /* Thay đổi kích thước tùy ý */
+}
+
+/* Hiển thị con trỏ tay khi hover vào thẻ i */
+.centered-icon i:hover {
+    cursor: pointer;
+}
+
+.tinhtien button {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: rgb(36, 36, 37);
+    color: #fff;
+}
+
+.error-label {
+    color: red; /* Màu chữ đỏ khi có lỗi */
+}
+
+.valid-label {
+    color: green; /* Màu chữ xanh khi hợp lệ */
+}

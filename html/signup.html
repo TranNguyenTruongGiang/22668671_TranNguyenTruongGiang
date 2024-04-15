@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/signup.css">
+    <script src="../js/signup.js"></script>
+    <link rel="icon" href="../icon/samsung_icon.png" type="image/png">
+</head>
+<body>
+    <div class="container-fluid p-0 m-0">
+        <div class="nom row bg-dark text-white p-3">
+          <h3>SAMSUNG ACCOUNT</h3>
+        </div>
+        <div class="nom row p-5">
+          <div class="content col-md-6 mx-auto p-5">
+            <h3>Create your Samsung account</h3>
+            <form action="../html/login.html">
+              <div class="form-floating mt-3">
+                <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" autocomplete="off">
+                <label for="username">Username</label>
+              </div>
+              <label id="tbusername" class="thongbao" for="">*</label>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" autocomplete="new-password">
+                <label for="pwd">Password</label>
+              </div>
+              <label id="tbpwd" class="thongbao" for="">*</label>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="cfpwd" placeholder="Enter password" name="cfpswd" autocomplete="new-password"">
+                <label for="cfpwd">Confirm Password</label>
+              </div>
+              <label id="tbcfpwd" class="thongbao" for="">*</label>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="lastN" placeholder="Enter last name" name="lastN" autocomplete="off">
+                <label for="lastN">Last Name</label>
+              </div>
+              <label id="tblastN" class="thongbao" for="">*</label>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="firstN" placeholder="Enter first name" name="firstN" autocomplete="off">
+                <label for="firstN">First Name</label>
+              </div>
+              <label id="tbfirstN" class="thongbao" for="">*</label>
+              <div class="rdate row">
+                <div class="col-md-4">
+                  <div class="">
+                    <input type="text" class="form-control" id="day" placeholder="Day" name="day" autocomplete="off">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="">
+                    <select name="month" id="month">
+                      <option value="1">January</option>
+                      <option value="2">February</option>
+                      <option value="3">March</option>
+                      <option value="4">April</option>
+                      <option value="5">May</option>
+                      <option value="6">June</option>
+                      <option value="7">July</option>
+                      <option value="8">August</option>
+                      <option value="9">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="">
+                    <input type="text" class="form-control" id="year" placeholder="Year" name="year" autocomplete="off">
+                  </div>
+                </div>
+              </div>
+              <label id="lbdate" class="thongbao" for="">*</label>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <button id="btnClose" class="w-100 bg-secondary border-0 btn btn-primary">Cancel</button>
+                </div>
+                <div class="col-md-6">
+                  <button id="btnSubmit" type="submit" class="w-100 btn border-0 btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

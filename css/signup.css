@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.nom {
+    margin: 0!important;
+}
+
+.content {
+    background-color: rgb(63, 63, 63);
+    border-radius: 20px;
+}
+
+.content h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.rdate input, select{
+    height: 30px!important;
+}
+
+.rdate select {
+    width: 100%;
+}
+
+.thongbao {
+    color: #fff;
+}
